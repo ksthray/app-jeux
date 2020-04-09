@@ -97,3 +97,19 @@ header h1{
         font-size: 110px;
     }
 }
+@media(max-width: 435px){
+    header h1{
+        font-size: 1.3rem;
+    }
+    .choice{
+        font-size: 75px;
+    }
+}
+@media(max-width: 320px){
+    header h1{
+        font-size: 1.3rem;
+    }
+    .choice{
+        font-size: 60px;
+    }
+}
