@@ -1,5 +1,7 @@
-importScripts("sw.toolbox.js")
-toolbox.precache(['index.html', "style.css", "modal.css", "img/icon.png"])
-toolbox.router.get('/*', toolbox.networkFirst, {
-    networkTimeoutSeconds: 5
-})
+if( 'undefined' === typeof window){
+    importScripts("sw-toolbox.js")
+    toolbox.precache(['index.html', "style.css", "modal.css", "img/icon.png"])
+    toolbox.router.get('/*', toolbox.networkFirst, {
+        networkTimeoutSeconds: 5
+    })
+}

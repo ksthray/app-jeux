@@ -2,13 +2,13 @@
     "name": "papier pierre ciseau",
     "short_name": "Jeux ppc",
     "lang": "fr",
-    "start_url": "/index.html",
+    "start_url": "/",
     "display": "standalone",
     "theme_color": "#333333",
     "background_color": "#003699",
     "icons": [
         {
-            "src" : "icon.png",
+            "src" : "img/icon.png",
             "sizes" : "512x512",
             "type" : "image/png"
         }
