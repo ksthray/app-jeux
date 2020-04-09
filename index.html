@@ -5,8 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/6e506955f1.js"></script>
     <link rel="icon" href="img/icon.png" type="image/png" sizes="512x512">
-    <link rel = "manifest" href = "manifest.json" /> 
+    <link rel = "manifest" href = "/manifest.json" /> 
     <meta name = "theme-color" content = "#333" />
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js').then( (resgistration) => {
+                console.log('Service Worker Registered sucess scope : ', resgistration.scope)
+                })
+            })
+        }
+    </script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="modal.css">
     <title>Pierre papier ciseau</title>
